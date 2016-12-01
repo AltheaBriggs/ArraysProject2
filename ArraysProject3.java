@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Name:Althea Briggs
  * Teacher:Mr.Hardman
  * Assignment #5, Program #
- * Date Last Modified:Nov.30
+ * Date Last Modified:Dec.1
  *
  */
 /**
@@ -27,8 +27,8 @@ public class ArraysProject3 {
 		
 			
 		int[] userArray = new int [5];
-		int index;
-		int maximum = -1;
+		int index = -1;
+		int maximum;
 		
 		System.out.println("Enter 5 numerical numbers: ");
 		System.out.println();
@@ -37,14 +37,52 @@ public class ArraysProject3 {
 			System.out.println("Please enter a value: ");
 			userArray[i] = userInput.nextInt();
 			
-			Maximumfor(int -1);
+		}
 			
+		maximum = userArray[0];
+			
+		for(int i = 0; i < userArray.length; i++){
+				if(userArray[i] > maximum){
+					maximum = userArray[i];
+				
+				}
+				
+		}
+		
+		System.out.println("Maximum number is:" + maximum + ".");
+				
+			for(int i = 0; i < userArray.length; i++){
+				if(userArray[1] == maximum){
+					index = i;
 					
+				}
 			
 			
+		}
+		
+		System.out.println("The maximum number can be found at the index of" + index + "." );
+		 
+		userInput.close();
 		
 		
+	}	
+	
+	
+}
 
-	}
-
-
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+			
+		
